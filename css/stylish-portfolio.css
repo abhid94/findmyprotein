@@ -107,7 +107,8 @@ body {
 
 .btn-primary {
     color: #fff;
-    background-color: rgba(210, 23, 110, 0.8)
+    background-color: rgba(210, 23, 110, 0.8);
+    border: none;
 }
 
 .btn-primary:hover,
@@ -115,6 +116,17 @@ body {
 .btn-primary:active {
     color: #fff;
     background-color: rgba(247,76,190,0.9);
+}
+
+#reset {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Nav Bar */
+
+.navbar {
+    font-family: 'Open Sans';
 }
 
 /* Custom Horizontal Rule */
