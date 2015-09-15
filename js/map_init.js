@@ -15,41 +15,6 @@
             locationScope:      "Sydney"
           });
 
-          myMap.set('styles',[
-  {
-    "featureType": "road.local",
-    "elementType": "labels.text",
-    "stylers": [
-      { "visibility": "off" }
-    ]
-  },{
-    "featureType": "poi.school",
-    "elementType": "geometry.fill",
-    "stylers": [
-      { "color": "#FFD800" }
-    ]
-  },{
-    "featureType": "poi.park",
-    "elementType": "geometry.fill",
-    "stylers": [
-      { "color": "#AA0114" }
-    ]
-  },{
-    "featureType": "landscape.man_made",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      { "color": "#6B3B03" },
-      { "weight": 0.9 }
-    ]
-  },{
-    "featureType": "road.highway",
-    "elementType": "geometry.fill",
-    "stylers": [
-      { "color": "#ffffff" }
-    ]
-  }
-]);
-
 
           var options = {
           types: ['(cities)'],
