@@ -1,0 +1,198 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+    font-size: 5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+    font-size: 3.5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-font {
+    font-family: 'Open Sans';
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.inner {
+    background-color: rgba(35, 35, 35, 0.7);
+    background-size: cover; 
+    width: auto;
+    height: auto;
+    position: center;
+    border: none;
+
+    }
+
+/* Custom glyphicons */
+.green {
+    color: #21b2a6;
+}    
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 2;
+    color: #fff;
+    background-color: rgba(210, 23, 110, 0.7);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(247,76,190,0.8);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Search button */
+
+.btn-primary {
+    color: #fff;
+    background-color: rgba(210, 23, 110, 0.8)
+}
+
+.btn-primary:hover,
+.btn-dark:focus,
+.btn-primary:active {
+    color: #fff;
+    background-color: rgba(247,76,190,0.9);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/salad1.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+.contact {
+    background-color: #21b2a6;
+}
+
+/* Map */
+
+#find_me {
+    text-decoration: none;
+}
+
+#find_me:hover, 
+#find_me:active {
+    color: #fff;
+}
+
+input, textarea {
+    max-width: 50%;
+}
+
+/*Center the placeholder text */
+
+::-webkit-input-placeholder {
+    text-align: center;
+}    
+
+:-moz-placeholder { /*Firefox 18-*/
+    text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 19+ */
+    text-align: center;
+}    
+
+:-ms-input-placeholder {
+    text-align: center;
+}
+
+
+.map {
+    height: 500px;
+    background-color: #21b2a6;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+}
