@@ -37,6 +37,7 @@ h3 {
 .uppercase {
     text-transform: uppercase;
     letter-spacing: 6px;
+    color: #000000;
 }
 
 body {
@@ -60,7 +61,7 @@ body {
 }
 
 .inner {
-    background-color: rgba(35, 35, 35, 0.7);
+    background-color: #ffffff
     background-size: cover; 
     width: auto;
     height: auto;
@@ -106,7 +107,8 @@ body {
 
 .btn-primary {
     color: #fff;
-    background-color: rgba(210, 23, 110, 0.8)
+    background-color: rgba(210, 23, 110, 0.8);
+    border: none;
 }
 
 .btn-primary:hover,
@@ -114,6 +116,17 @@ body {
 .btn-primary:active {
     color: #fff;
     background-color: rgba(247,76,190,0.9);
+}
+
+#reset {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Nav Bar */
+
+.navbar {
+    font-family: 'Open Sans';
 }
 
 /* Custom Horizontal Rule */
@@ -129,7 +142,8 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/salad1.jpg) no-repeat center center scroll;
+    /*background: url(../img/salad1.jpg) no-repeat center center scroll;*/
+    background-color: #ffffff
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -143,7 +157,7 @@ hr.small {
 }
 
 .contact {
-    background-color: #21b2a6;
+    background-color: #ffffff;
 }
 
 /* Map */
