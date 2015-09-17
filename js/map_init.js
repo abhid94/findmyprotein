@@ -12,7 +12,7 @@
             googleApiKey:       "AIzaSyBlUgopyh9llhLjsv2PVwu961vVlew3XUo",
             locationColumn:     "geometry",
             map_center:         [-33.8735300, 151.2069400],
-            locationScope:      "Sydney"
+            //locationScope:      "Sydney"
           });
 
 
