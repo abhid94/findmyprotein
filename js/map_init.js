@@ -34,6 +34,10 @@
             myMap.doSearch();
           });
           
+          $('#category').change(function(){
+            myMap.category();
+          });
+
           $('#search').click(function(){
             myMap.doSearch();
           });

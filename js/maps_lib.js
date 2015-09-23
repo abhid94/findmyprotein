@@ -71,6 +71,15 @@
         $("#result_box").hide();
 
         //-----custom initializers-----
+        //create a new fusion table layer needed for functioning
+        //of filters
+        this.layer_0 = new google.maps.FusionTablesLayer({
+            query: {
+              select: "'geometry'",
+              from: "1VdFkq7tPu10KHVz31Zg6o-dwuVhmylE9hp7YINev"
+            },
+            map: this.map
+        });
         //-----end of custom initializers-----
 
         //run the default search when page loads
@@ -89,8 +98,8 @@
         //for more details, see https://developers.google.com/fusiontables/docs/v1/using#WorkingStyles
         self.searchrecords = new google.maps.FusionTablesLayer({
             query: {
-                from: self.fusionTableId,
-                select: self.locationColumn,
+                from: "1VdFkq7tPu10KHVz31Zg6o-dwuVhmylE9hp7YINev",
+                select: "geometry",
                 where: whereClause
             },
             styleId: 2,
@@ -171,6 +180,26 @@
         });
 
     };
+
+    MapsLib.prototype.category = function () {
+      var whereClause;
+      var self = this
+      self.clearSearch();
+      var searchString = document.getElementById('category').value.replace(/'/g, "\\'");
+      if (searchString != '--Select--') {
+        whereClause = "'Category' CONTAINS IGNORING CASE '" + searchString + "'";
+        console.log(whereClause)
+      }
+      self.layer_0.setOptions({
+        query: {
+          select: "'geometry'",
+          from: "1VdFkq7tPu10KHVz31Zg6o-dwuVhmylE9hp7YINev",
+          where: whereClause
+        }
+      });
+
+
+    }
 
     MapsLib.prototype.reset = function () {
         $.address.parameter('address','');
