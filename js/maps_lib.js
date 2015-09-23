@@ -78,7 +78,10 @@
               select: "'geometry'",
               from: "1VdFkq7tPu10KHVz31Zg6o-dwuVhmylE9hp7YINev"
             },
+            styleId: 2,
+            templateId: 3,
             map: this.map
+
         });
         //-----end of custom initializers-----
 
@@ -176,7 +179,7 @@
 
         self.getgeoCondition(address, function (geoCondition) {
             self.whereClause += geoCondition;
-            self.submitSearch(self.whereClause, self.map);
+            //self.submitSearch(self.whereClause, self.map);
         });
 
     };
